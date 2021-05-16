@@ -8,15 +8,5 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'data-binding';
 
-  firstValue: String;
-
-  buttonState = true;
-
-  changeButtonState(){
-    this.buttonState = !this.buttonState;
-  }
-
-  changeFirstValue(event){
-    this.firstValue = event.target.value;
-  }
+  listOfComponents= ['first', 'second', 'third', 'fourth'];
 }
