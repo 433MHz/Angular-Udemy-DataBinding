@@ -3,10 +3,12 @@ import { BrowserModule } from '@angular/platform-browser';
 import {FormsModule} from '@angular/forms'
 
 import { AppComponent } from './app.component';
+import { DataOutputComponent } from './data-output/data-output.component';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DataOutputComponent
   ],
   imports: [
     BrowserModule, FormsModule

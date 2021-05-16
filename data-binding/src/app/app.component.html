@@ -1,6 +1,9 @@
-<input type="text" placeholder="Set first value" [(ngModel)]="firstValue">
-<input type="text" placeholder="Set second value" (input) = "changeFirstValue($event)">
-<p>{{firstValue}}</p>
+<button (click) = "first = !first">Make 1 False/True</button><br>
+<button (click) = "second = !second">Make 2 False/True</button><br>
+<button (click) = "third = !third">Make 3 False/True</button><br>
+<button (click) = "fourth = !fourth">Make 4 False/True</button><br>
 
-<button (click) = "changeButtonState()">Make bottom button {{buttonState}}</button><br>
-<button [disabled] = "buttonState">Slave button</button>
+<app-data-output *ngIf = "first"></app-data-output>
+<app-data-output *ngIf = "second"></app-data-output>
+<app-data-output *ngIf = "third"></app-data-output>
+<app-data-output *ngIf = "fourth"></app-data-output>

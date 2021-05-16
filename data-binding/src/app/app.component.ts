@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'data-binding';
 
-  listOfComponents= ['first', 'second', 'third', 'fourth'];
+  first: boolean;
+  second: boolean;
+  third: boolean;
+  fourth: boolean;
 }
